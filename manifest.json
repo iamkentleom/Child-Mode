@@ -7,10 +7,11 @@
            "48": "images/icon48.png",
           "128": "images/icon128.png" },
     "offline_enabled": true,
+    "incognito": "split",
     "content_scripts": [
         {
             "matches": [
-                "*://*/*"
+                "<all_urls>"
             ],
             "js": [
                 "content.js"
