@@ -1,0 +1,21 @@
+{
+"manifest_version": 2,
+    "name": "Child-Mode",
+    "description": "Blocks offensive terms present in a page — making the web a suitable place for a child.",
+    "version": "1.0",
+    "icons": { "16": "images/icon16.png",
+           "48": "images/icon48.png",
+          "128": "images/icon128.png" },
+    "offline_enabled": true,
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
